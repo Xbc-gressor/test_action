@@ -48,3 +48,5 @@ jobs:
     - name: Run tests
       run: |
         pytest ${{ env.pytest-args }} ${{ env.test-dir }}
+    - name: Upload coverage reports to Codecov with GitHub Action
+      uses: codecov/codecov-action@v3
