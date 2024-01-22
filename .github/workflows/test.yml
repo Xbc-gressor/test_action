@@ -50,3 +50,5 @@ jobs:
         pytest ${{ env.pytest-args }} ${{ env.test-dir }} --cov-report=xml
     - name: Upload coverage reports to Codecov with GitHub Action
       uses: codecov/codecov-action@v3
+      env:
+          CODECOV_TOKEN: c5a277d3-6c1f-4d74-8789-cd8bb7222bad
